@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 68%;
+  height: 58%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+
+.input {
+  width: 84%;
+  height: 27%;
+  border: 1px solid black;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 84%;
+  height: 61%;  
+}
+
