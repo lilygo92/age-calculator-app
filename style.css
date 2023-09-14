@@ -16,6 +16,7 @@
   width: 84%;
   height: 27%;
   border: 1px solid black;
+  font-size: 32px;
 }
 
 .display {
@@ -24,5 +25,6 @@
   border: 1px solid black;
   width: 84%;
   height: 61%;  
+  font-size: 96px;
 }
 
