@@ -1,3 +1,7 @@
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -9,14 +13,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
+  border: solid 1px hsl(0, 0%, 86%);
+  border-radius: 30px 30px 150px 30px;
+  background-color: white;
 }
 
 .input {
   width: 84%;
   height: 27%;
-  border-bottom: 1px solid black;
-  font-size: 16px;
+  border-bottom: solid 1px hsl(0, 0%, 86%);
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: hsl(0, 1%, 44%);
@@ -26,17 +32,19 @@
 
 input {
   width: 80%;
-  height: 40%;
+  height: 45%;
+  border: solid 1px hsl(0, 0%, 86%);
+  border-radius: 10px;
 }
 
 .forms {
   display: flex;
+  padding-top: 3%;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 
 label {
@@ -64,6 +72,7 @@ svg {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
+  padding-top: 2%;
 }
 
 .display-text {
