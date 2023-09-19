@@ -20,6 +20,13 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: hsl(0, 1%, 44%);
+  display: flex;
+}
+
+svg {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 20px;
 }
 
 .display {
