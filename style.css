@@ -23,6 +23,15 @@
   display: flex;
 }
 
+.forms {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 svg {
   background-color: hsl(259, 100%, 65%);
   border-radius: 50%;
