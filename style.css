@@ -21,6 +21,7 @@
   font-weight: 400;
   color: hsl(0, 1%, 44%);
   display: flex;
+  justify-content: space-between;
 }
 
 .forms {
@@ -30,12 +31,17 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 svg {
   background-color: hsl(259, 100%, 65%);
   border-radius: 50%;
   padding: 20px;
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 25%;
 }
 
 .display {
