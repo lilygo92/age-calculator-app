@@ -1,8 +1,8 @@
 getAge = (birthday) => {
   const today = new Date()
   let birthdate = new Date(birthday);
-  let year = today.getFullYear() - birthdate.getFullYear();
-  let month = today.getMonth() - birthdate.getMonth();
+  let year = today.getFullYear() - birthdate.getUTCFullYear();
+  let month = today.getMonth() - birthdate.getUTCMonth();
   let day = today.getDate() - birthdate.getUTCDate();
 
   if (month === 0 && today.getDate() < birthdate.getUTCDate()) {
