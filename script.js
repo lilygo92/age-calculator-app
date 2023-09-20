@@ -1,14 +1,11 @@
 getAge = (birthday) => {
-  const today = new Date();
-  const birthdate = new Date(birthday);
+  const today = new Date()
+  let birthdate = new Date(birthday);
   let year = today.getFullYear() - birthdate.getFullYear();
   let month = today.getMonth() - birthdate.getMonth();
-  let day = today.getDate() - birthdate.getDate();
+  let day = today.getDate() - birthdate.getUTCDate();
 
-  console.log(today.getDate());
-  console.log(birthdate.getDate());
-  console.log(birthdate);
-  if (month === 0 && today.getDate() < birthdate.getDate()) {
+  if (month === 0 && today.getDate() < birthdate.getUTCDate()) {
     year--;
   } 
   else if (month < 0) {
@@ -19,4 +16,4 @@ getAge = (birthday) => {
   return [year, month, day];
 }
 
-console.log(getAge("2002-10-19"));
+console.log(getAge("2002-07-19"));
