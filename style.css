@@ -121,4 +121,7 @@ svg {
     width: 90%;
     font-size: 24px;
   }
+  .container {
+    height: 58%;
+  }
 }
