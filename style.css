@@ -93,3 +93,32 @@ svg {
 .display-text {
   line-height: 1.1;
 }
+
+@media only screen and (max-width: 1200px) { 
+  .display {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  .display {
+    font-size: 60px;
+  }
+  svg {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    right: 40%;
+    top: 27.5%;
+  }
+  .forms {
+    width: 100%;
+  }
+  input[type="number"] {
+    height: 30%;
+    width: 90%;
+    font-size: 24px;
+  }
+}
