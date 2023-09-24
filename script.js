@@ -16,7 +16,28 @@ $(document).ready(() => {
   
     return [year, month, day];
   }
-  
+  $("#year").attr('max','4');
+  $("#month").attr('max','2');
+  $("#day").attr('max','2');
+
+  $("#year").on("input", () => {
+    if ($("#year").val() >= 4) {
+      $("#year").val($("#year").val().substr(0, 4));
+    }
+  });
+
+  $("#month").on("input", () => {
+    if ($("#month").val() >= 2) {
+      $("#month").val($("#month").val().substr(0, 2));
+    }
+  });
+
+  $("#day").on("input", () => {
+    if ($("#day").val() >= 4) {
+      $("#day").val($("#day").val().substr(0, 2));
+    }
+  });
+
   $("#enter-button").on("click", () => {
     let yearValue = $("#year").val();
     let monthValue = $("#month").val();
