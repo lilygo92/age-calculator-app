@@ -31,6 +31,9 @@ $(document).ready(() => {
       $("#year-display").html(ageArray[0]);
       $("#month-display").html(ageArray[1]);
       $("#day-display").html(ageArray[2]);
+      $("#year-display").css("color", "hsl(259, 100%, 65%)");
+      $("#month-display").css("color", "hsl(259, 100%, 65%)");
+      $("#day-display").css("color", "hsl(259, 100%, 65%)");
     }
   })
 })
