@@ -2,6 +2,7 @@ $(document).ready(() => {
   getAge = (birthday) => {
     const today = new Date()
     let birthdate = new Date(birthday);
+    console.log(birthdate);
     let year = today.getFullYear() - birthdate.getUTCFullYear();
     let month = today.getMonth() - birthdate.getUTCMonth();
     let day = today.getDate() - birthdate.getUTCDate();
@@ -18,13 +19,18 @@ $(document).ready(() => {
   }
   
   $("#enter-button").on("click", () => {
-    console.log("b");
-
     if ($("#day").val() === "" || $("#month").val() === "" || $("#year").val() === "") {
       console.log("a");
     } else {
+      let yearValue = $("#year").val();
+      let monthValue = $("#month").val();
+      let dayValue = $("#day").val();
+
+      let ageArray = getAge(`${yearValue}-${monthValue}-${dayValue}`);
+
+      $("#year-display").html(ageArray[0]);
+      $("#month-display").html(ageArray[1]);
+      $("#day-display").html(ageArray[2]);
     }
   })
-
-
 })
