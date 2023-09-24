@@ -2,7 +2,6 @@ $(document).ready(() => {
   getAge = (birthday) => {
     const today = new Date()
     let birthdate = new Date(birthday);
-    console.log(birthdate);
     let year = today.getFullYear() - birthdate.getUTCFullYear();
     let month = today.getMonth() - birthdate.getUTCMonth();
     let day = today.getDate() - birthdate.getUTCDate();
@@ -19,13 +18,20 @@ $(document).ready(() => {
   }
   
   $("#enter-button").on("click", () => {
-    if ($("#day").val() === "" || $("#month").val() === "" || $("#year").val() === "") {
-      console.log("a");
-    } else {
-      let yearValue = $("#year").val();
-      let monthValue = $("#month").val();
-      let dayValue = $("#day").val();
+    let yearValue = $("#year").val();
+    let monthValue = $("#month").val();
+    let dayValue = $("#day").val();
 
+    const dateInput = new Date(`${yearValue}-${monthValue}-${dayValue}`);
+    const currentDate = new Date();
+
+    if ($("#day").val() === "" || $("#month").val() === "" || $("#year").val() === "") {
+      alert("Please fill in all the fields.");
+    } 
+    else if (isNaN(dateInput) || currentDate < dateInput) {
+      alert("Enter a valid birthday.");
+    }
+    else {
       let ageArray = getAge(`${yearValue}-${monthValue}-${dayValue}`);
 
       $("#year-display").html(ageArray[0]);
