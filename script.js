@@ -61,6 +61,10 @@ $(document).ready(() => {
       $("#year-display").css("color", "hsl(259, 100%, 65%)");
       $("#month-display").css("color", "hsl(259, 100%, 65%)");
       $("#day-display").css("color", "hsl(259, 100%, 65%)");
+
+      $("#year").val("");
+      $("#month").val("");
+      $("#day").val("");
     }
   })
 })
