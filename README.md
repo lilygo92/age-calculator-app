@@ -1,12 +1,5 @@
 # Frontend Mentor - Age calculator app
 
-![Desktop design](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-base-state-age-calculator.png)
-![Show filled in input fields](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-filled-input-age-calculator.png)
-![Show displaying age](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-showing-age-age-calculator.png)
-![Show invalid error message](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-error-message-age-calculator.png)
-![Show empty error message](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-empty-input-error-age-calculator.png)
-![Mobile design](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/mobile-design-age-calculator.png)
-
 ## Welcome! 👋
 
 This QR code component was done as a challenge from Frontend Mentor. The goal was to get the design as close as possible to the images show in the design folder, as well as implementing the following:
@@ -23,3 +16,12 @@ This QR code component was done as a challenge from Frontend Mentor. The goal wa
 This app was built using HTML and CSS, as well as Javascript and jQuery.
 
 Link to Frontend Mentor here: https://www.frontendmentor.io/
+
+## Screenshots
+
+![Desktop design](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-base-state-age-calculator.png)
+![Show filled in input fields](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-filled-input-age-calculator.png)
+![Show displaying age](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-showing-age-age-calculator.png)
+![Show invalid error message](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-error-message-age-calculator.png)
+![Show empty error message](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/desktop-empty-input-error-age-calculator.png)
+![Mobile design](https://github.com/lilygo92/age-calculator-app/blob/master/assets/images/mobile-design-age-calculator.png)
